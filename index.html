@@ -124,7 +124,7 @@
       gtag('config', 'UA-114682884-1');
 
       function downloadClick() {
-        gtag('event', 'foo', {
+        gtag('event', 'download', 'click', 'mac', {
           'os': 'mac',
           'event_callback': function(){document.location = url;}
         });
