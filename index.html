@@ -132,6 +132,15 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-114682884-1');
+
+      function downloadClick() {
+        gtag('event', 'downloaded', {
+          'event_category': 'app',
+          'event_label': 'mac',
+          'os': 'mac',
+          // 'event_callback': function(){document.location = url;}
+        });
+      }
     </script>
   </body>
 
